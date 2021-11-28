@@ -123,12 +123,14 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 function Header() {
   return (
-    <header className="flex justify-between m-6">
-      <div className="flex gap-2">
-        <div>
-          <Link to="/games">Logo</Link>
+    <header className="flex justify-between m-6 items-center">
+      <div className="flex gap-4">
+        <div className="">
+          <Link to="/games">
+            <div className="h-20 w-20 bg-logo bg-cover rounded-full"></div>
+          </Link>
         </div>
-        <div className="block text-black no-underline text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight">
+        <div className="flex items-center text-black no-underline text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight">
           <Link to="/">Cory Lashway</Link>
         </div>
       </div>

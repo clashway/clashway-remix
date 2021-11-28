@@ -3,7 +3,11 @@ module.exports = {
   purge: ["./app/**/*.{ts,tsx}"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: {
+        'logo': "url('/assets/cory.jpg')"
+      }
+    }
   },
   variants: {},
   plugins: []

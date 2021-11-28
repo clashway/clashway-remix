@@ -595,70 +595,8 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
-  --tw-border-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
-}
-
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.m-12 {
-  margin: 3rem;
-}
-
 .m-6 {
   margin: 1.5rem;
-}
-
-.m-4 {
-  margin: 1rem;
-}
-
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .mx-6 {
@@ -666,16 +604,13 @@ video {
   margin-right: 1.5rem;
 }
 
-.mt-auto {
-  margin-top: auto;
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mt-8 {
@@ -698,16 +633,36 @@ video {
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
+.w-8 {
+  width: 2rem;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.w-16 {
+  width: 4rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .flex-grow {
@@ -716,6 +671,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -730,17 +689,28 @@ video {
   gap: 0.5rem;
 }
 
-.border-t {
-  border-top-width: 1px;
+.gap-4 {
+  gap: 1rem;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
+.rounded-full {
+  border-radius: 9999px;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.bg-logo {
+  background-image: url('/assets/cory.jpg');
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-xl {
@@ -758,21 +728,16 @@ video {
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-extrabold {
   font-weight: 800;
 }
 
-.leading-none {
-  line-height: 1;
+.font-bold {
+  font-weight: 700;
 }
 
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgba(147, 197, 253, var(--tw-text-opacity));
+.leading-none {
+  line-height: 1;
 }
 
 .text-black {
