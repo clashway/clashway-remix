@@ -1,3 +1,13 @@
+import type { MetaFunction } from "remix";
+
+// https://remix.run/api/conventions#meta
+export let meta: MetaFunction = () => {
+  return {
+    title: "Cory Lashway",
+    description: "Games of the Year"
+  };
+};
+
 export default function Games() {
   const games = [
     {
