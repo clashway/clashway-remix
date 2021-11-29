@@ -112,9 +112,9 @@ function Document({
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex flex-col justify-between h-screen text-gray-300 bg-black">
       <Header />
-      <div className="mx-6 my-8 max-w-7xl flex-grow">
+      <div className="flex-grow m-6 max-w-7xl">
         <div className="">{children}</div>
       </div>
     </div>
@@ -123,18 +123,18 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 function Header() {
   return (
-    <header className="flex justify-between m-6 items-center">
+    <header className="flex items-center justify-between m-6">
       <div className="flex gap-4">
         <div className="">
-          <Link to="/games">
-            <div className="h-20 w-20 bg-logo bg-cover rounded-full"></div>
+          <Link to="/">
+            <div className="w-12 h-12 bg-cover rounded-full bg-logo"></div>
           </Link>
         </div>
-        <div className="flex items-center text-black no-underline text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight">
-          <Link to="/">Cory Lashway</Link>
+        <div className="flex items-center text-xl font-extrabold leading-none text-yellow-400 no-underline lg:text-3xl lg:leading-tight">
+          <Link to="/games">Cory Lashway</Link>
         </div>
       </div>
-      <div>
+      <div className="text-yellow-400">
         <Hamburger />
       </div>
     </header>
@@ -145,7 +145,7 @@ function Hamburger() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="w-8 h-8"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"

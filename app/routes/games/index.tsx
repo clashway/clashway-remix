@@ -22,7 +22,9 @@ export default function Games() {
   return (
     <div className="">
       <main>
-        <h1 className="font-bold text-lg">2022 Game Log</h1>
+        <h1 className="text-2xl font-extrabold text-yellow-400">
+          2022 Game Log
+        </h1>
         <ul className="mt-8">
           {games.map((game) => {
             return (
